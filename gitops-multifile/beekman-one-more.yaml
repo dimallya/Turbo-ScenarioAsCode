@@ -35,7 +35,7 @@ spec:
         terminationMessagePolicy: File
       dnsPolicy: ClusterFirst
       imagePullSecrets:
-      - name: docker-credentials
+      - name: docker
       restartPolicy: Always
       schedulerName: default-scheduler
       securityContext: {}
