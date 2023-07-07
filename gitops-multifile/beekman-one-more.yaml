@@ -15,8 +15,6 @@ spec:
       labels:
         app: bee
     spec:
-      imagePullSecrets:
-      - name: docker
       containers:
       - env:
         - name: RUN_TYPE
@@ -37,7 +35,7 @@ spec:
         terminationMessagePolicy: File
       dnsPolicy: ClusterFirst
       imagePullSecrets:
-      - name: docker
+      - name: docker-credentials
       restartPolicy: Always
       schedulerName: default-scheduler
       securityContext: {}
